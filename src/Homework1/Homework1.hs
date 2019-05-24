@@ -16,7 +16,7 @@ validateCreditCard = validate . sumDigits . doubleEveryOther . toDigits
 -- Helper Functions
 -- 
 --Exercise 1: 
-toDigits :: Integer -> [Integer] --definicion de una funsion en haskell
+toDigits :: Integer -> [Integer] --definicion de una funcion en haskell
 -- toDigits 0 = []
 toDigits n
     | n < 1          = []
@@ -51,7 +51,7 @@ validate n = n `mod` 10 == 0
 --Excersie 5
 type Peg = String  --defincion de tipos TYPE
 type Move = (Peg, Peg)
-hanoi :: Integer -> Peg -> Peg -> Peg -> [Move] -- la funsion puede tener muchos argumantos, el ultimo tipo declarado es la salida de la funsion (para el caso la salida es [Move])
+hanoi :: Integer -> Peg -> Peg -> Peg -> [Move] -- la funcion puede tener muchos argumantos, el ultimo tipo declarado es la salida de la funcion (para el caso la salida es [Move])
 hanoi 1 from to aux = [(from,to)]
 hanoi n from to aux = 
     hanoi (n-1) from aux to ++ [(from,to)] ++ hanoi (n-1) aux to from

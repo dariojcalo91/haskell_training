@@ -10,7 +10,7 @@ module Homework1.Extra where
     --find the last but one element of a list
     --try [1,2,3,4] & ['a'..'z']
     myButLast::[a] -> a
-    myButLast = last . init --usando composicion de funsiones / parametros implicitos
+    myButLast = last . init --usando composicion de funciones / parametros implicitos
 
     --the k-th element of a list
     elementAt :: [a]->Int->a
